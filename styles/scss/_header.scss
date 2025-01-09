@@ -1,0 +1,37 @@
+// _header.scss
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; // Espace logique entre le logo et le menu
+  padding: 20px;
+  background-color: $primary-color;
+
+  .logo {
+    img {
+      width: 50px;
+    }
+  }
+
+  nav {
+    ul {
+      list-style: none; // Supprime les puces de la liste
+      display: flex;
+      gap: 50px; // Espacement entre les liens
+
+      li {
+        a {
+          color: $text-color;
+          font-weight: 700;
+          font-size: 1.1em;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline; // Ajout d’un effet visuel au survol
+          }
+        }
+      }
+    }
+  }
+}
+  

@@ -1,0 +1,30 @@
+// _variables.scss
+
+
+// Couleurs
+$primary-color: #d2c9f8;
+$text-secondary: #8C174D;
+$icon-color-intro: #8C174D;
+$btn-bg: #8C174D;
+$btn-hover-bg: darken($btn-bg, 10%);
+$text-color: #15043f;
+$bg-about: #f3f3f3;
+$text-muted: #5e5e5e;
+$card-bg: #e4e3e3;
+$icon-color-about: #a09abd;
+$shadow-color: #929292;
+$bg-section: #d2c9f8;
+$card-shadow: 1px 1px 10px #111;
+$timeline-bg: #f3f3f3;
+$timeline-line: #fff;
+
+
+// Tailles et marges
+$border-radius: 10px;
+$font-size-base: 16px;
+$padding-base: 20px;
+
+// Breakpoints
+$breakpoint-sm: 500px;
+$breakpoint-md: 880px;
+$breakpoint-lg: 1000px;
