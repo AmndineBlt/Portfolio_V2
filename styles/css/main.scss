@@ -3,10 +3,14 @@
 // reset css
 @import "../scss/reset";
 
+// Import de la librairie AOS
+@import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
+
 // Import variables (doit être en premier pour être utilisé partout)
 @import "../scss/variables";
 
 // Import styles des sections principales
+@import "../scss/body";
 @import "../scss/header";
 @import "../scss/intro";
 @import "../scss/about";

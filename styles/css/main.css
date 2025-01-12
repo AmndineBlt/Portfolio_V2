@@ -2,6 +2,7 @@
    v5.0.2 | 20191019
    License: none (public domain)
 */
+@import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -57,10 +58,20 @@ table {
   border-spacing: 0;
 }
 
+* {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f3f3f3;
+  color: #15043f;
+  overflow-x: hidden;
+}
+
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px;
   background-color: #d2c9f8;
 }
@@ -219,6 +230,7 @@ header nav ul li a:hover {
 #apropos .container .card .bottom article {
   max-width: 500px;
   text-align: center;
+  margin: 0 40px;
 }
 #apropos .container .card .bottom article h2 {
   font-size: 1.8em;
@@ -293,7 +305,8 @@ header nav ul li a:hover {
 }
 #portfolio .container .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 }
 #portfolio .container .projects-grid .project {
@@ -390,7 +403,7 @@ section .container .timeline li {
 section .container .timeline li::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 60px;
   left: 50%;
   width: 25px;
   height: 25px;
@@ -401,9 +414,11 @@ section .container .timeline li::after {
 section .container .timeline li article {
   position: relative;
   background-color: #f3f3f3;
+  width: 400px;
   padding: 15px 20px;
   border-radius: 5px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 100;
 }
 section .container .timeline li article h3 {
   font-size: 1.2em;
@@ -415,10 +430,10 @@ section .container .timeline li article p {
   color: #5e5e5e;
 }
 section .container .timeline li:nth-child(odd) article {
-  margin-left: 60px;
+  left: 450px;
 }
 section .container .timeline li:nth-child(even) article {
-  margin-right: 60px;
+  right: 100px;
 }
 
 @media screen and (max-width: 768px) {

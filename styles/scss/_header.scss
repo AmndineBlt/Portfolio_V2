@@ -3,7 +3,7 @@
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between; // Espace logique entre le logo et le menu
+  justify-content: space-around; // Espace logique entre le logo et le menu
   padding: 20px;
   background-color: $primary-color;
 

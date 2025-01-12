@@ -1,5 +1,6 @@
-// _experiences_scss
+// _experiences.scss
 
+// Styles pour les sections expériences et formations
 section {
   padding: 50px 20px;
   background-color: $bg-section;
@@ -44,7 +45,7 @@ section {
         &::after {
           content: "";
           position: absolute;
-          top: 0;
+          top: 60px;
           left: 50%;
           width: 25px;
           height: 25px;
@@ -55,10 +56,12 @@ section {
 
         article {
           position: relative;
-          background-color: $timeline-bg;
+          background-color: $bg_color;
+          width: 400px;
           padding: 15px 20px;
           border-radius: 5px;
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+          opacity: 100;
 
           h3 {
             font-size: 1.2em;
@@ -75,11 +78,11 @@ section {
 
       // Alignement alterné des articles
       li:nth-child(odd) article {
-        margin-left: 60px;
+        left: 450px;
       }
 
       li:nth-child(even) article {
-        margin-right: 60px;
+        right: 100px;
       }
     }
   }
