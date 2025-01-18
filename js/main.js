@@ -1,22 +1,14 @@
-// Import des fonctions nécessaires depuis le module timeline.js
-import { timeline } from './timeline.js';
+// Import custom module
+import showMyResume from "./resume.js";
 
 const app = {
-  init() {
-    timeline.isItemInView(),
-    timeline.callbackFunc(),
-  // Create and add timeline
-  window.addEventListener("load", timeline.createTimeline);
-  window.addEventListener("resize", timeline.createTimeline);
-  window.addEventListener("scroll", timeline.createTimeline);
-  }
-}
+    init() {
+        // Initialisation des modules
+        showMyResume.init();
+    },
+};
 
-
-
-document.addEventListener('DOMContentLoaded', app.init)
-
-
-
+// Lancer l'application
+app.init();
 
 
